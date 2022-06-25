@@ -1,6 +1,7 @@
 import totoro from '../images/Totoro.png';
 import { Link } from 'react-router-dom';
 
+// List of movies
 function ListMovie({ movie }) {
     return (
         <div className="listItem">
@@ -12,7 +13,7 @@ function ListMovie({ movie }) {
                 <h1>{movie.title}</h1>
                 <p className="description">{movie.description}</p>
                 <Link
-                    to="/id"
+                    to="/see-more"
                     state={{
                         banner: `${movie.movie_banner}`,
                         title: `${movie.title}`,

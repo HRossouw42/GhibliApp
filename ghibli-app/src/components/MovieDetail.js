@@ -1,8 +1,9 @@
-import banner from '../images/Banner.jpeg';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-function MovieDetail(props) {
+// Further detail when movie is selected from list
+function MovieDetail() {
+    // Props gotten from parent Link's state object
     const location = useLocation();
     const { banner, title, director, date } = location.state;
 
