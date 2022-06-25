@@ -1,16 +1,28 @@
-// import totoro from "./bg-wave.svg";
 import totoro from '../images/Totoro.png';
-import poster from '../images/Poster.jpeg';
+import { Link } from 'react-router-dom';
 
 function ListMovie({ movie }) {
     return (
-        <div style={{}} className="listItem">
-            <img src={movie.image} alt="None" className="posterImg" />
-
-            <h1>{movie.title}</h1>
-            <p className="description">{movie.description}</p>
-            <button className="btn">SEE MORE</button>
-            <img src={totoro} alt="Nothing" className="bgImg" />
+        <div className="listItem">
+            <div>
+                <img src={movie.image} alt="None" className="posterImg" />
+                <img src={totoro} alt="Nothing" className="bgImg" />
+            </div>
+            <div className="listText">
+                <h1>{movie.title}</h1>
+                <p className="description">{movie.description}</p>
+                <Link
+                    to="/id"
+                    state={{
+                        banner: `${movie.movie_banner}`,
+                        title: `${movie.title}`,
+                        director: `${movie.director}`,
+                        date: `${movie.release_date}`,
+                    }}
+                >
+                    <button className="btn">SEE MORE</button>
+                </Link>
+            </div>
         </div>
     );
 }
