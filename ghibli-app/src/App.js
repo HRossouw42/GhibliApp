@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import ListMovie from './components/ListMovie';
 import MovieDetail from './components/MovieDetail';
@@ -35,15 +35,12 @@ function App() {
         );
         const data = await res.json();
 
-        console.log('fetched from API:', data);
         return data;
     };
 
     return (
-        // <>
-        // <Router>
         <div className="container">
-            <h1>Ghibli movie App 2</h1>
+            <h1> </h1>
             <Routes>
                 <Route
                     path="/"
@@ -54,8 +51,6 @@ function App() {
                 <Route path="/see-more" element={<MovieDetail />} />
             </Routes>
         </div>
-        // </Router>
-        // </>
     );
 }
 

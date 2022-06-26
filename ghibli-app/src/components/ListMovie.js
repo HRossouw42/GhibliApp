@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 // List of movies
 function ListMovie({ movie }) {
-    console.log('movie listed: ', movie.title);
     return (
         <div className="listItem">
             <div>
@@ -28,9 +27,5 @@ function ListMovie({ movie }) {
         </div>
     );
 }
-
-ListMovie.defaultProps = {
-    title: 'A Ghibli Movie',
-};
 
 export default ListMovie;
