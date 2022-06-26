@@ -7,6 +7,7 @@ function MovieDetail() {
     const location = useLocation();
     const { banner, title, director, date } = location.state;
 
+    console.log('Further detail for movie: ', title);
     return (
         <div className="singleItem">
             <img src={banner} alt="banner" className="bannerImg"></img>

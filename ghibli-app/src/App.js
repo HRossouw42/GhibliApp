@@ -35,6 +35,7 @@ function App() {
         );
         const data = await res.json();
 
+        console.log('fetched from API:', data);
         return data;
     };
 
