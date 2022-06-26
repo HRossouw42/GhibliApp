@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/GhibliApp/static/css/main.98df7e8f.css",
-    "main.js": "/GhibliApp/static/js/main.d12f7890.js",
-    "static/js/787.11c2e41e.chunk.js": "/GhibliApp/static/js/787.11c2e41e.chunk.js",
-    "static/media/Totoro.png": "/GhibliApp/static/media/Totoro.13fe3b4fc2fc462ef6cd.png",
-    "index.html": "/GhibliApp/index.html",
-    "main.98df7e8f.css.map": "/GhibliApp/static/css/main.98df7e8f.css.map",
-    "main.d12f7890.js.map": "/GhibliApp/static/js/main.d12f7890.js.map",
-    "787.11c2e41e.chunk.js.map": "/GhibliApp/static/js/787.11c2e41e.chunk.js.map"
+    "main.css": "/ghibli-app/static/css/main.98df7e8f.css",
+    "main.js": "/ghibli-app/static/js/main.d2b7ba13.js",
+    "static/js/787.11c2e41e.chunk.js": "/ghibli-app/static/js/787.11c2e41e.chunk.js",
+    "static/media/Totoro.png": "/ghibli-app/static/media/Totoro.13fe3b4fc2fc462ef6cd.png",
+    "index.html": "/ghibli-app/index.html",
+    "main.98df7e8f.css.map": "/ghibli-app/static/css/main.98df7e8f.css.map",
+    "main.d2b7ba13.js.map": "/ghibli-app/static/js/main.d2b7ba13.js.map",
+    "787.11c2e41e.chunk.js.map": "/ghibli-app/static/js/787.11c2e41e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98df7e8f.css",
-    "static/js/main.d12f7890.js"
+    "static/js/main.d2b7ba13.js"
   ]
 }
