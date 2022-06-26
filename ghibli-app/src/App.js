@@ -43,7 +43,7 @@ function App() {
         // <>
         // <Router>
         <div className="container">
-            <h1>Ghibli movie App</h1>
+            <h1>Ghibli movie App 2</h1>
             <Routes>
                 <Route
                     path="/"
