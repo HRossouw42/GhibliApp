@@ -41,7 +41,6 @@ function App() {
 
     return (
         // <>
-
         // <Router>
         <div className="container">
             <h1>Ghibli movie App</h1>
