@@ -42,19 +42,19 @@ function App() {
     return (
         // <>
         // {/* <h1>Ghibli movie App</h1> */}
-        <Router>
-            <div className="container">
-                <Routes>
-                    <Route
-                        path="/"
-                        element={movies.map((movie) => {
-                            return <ListMovie key={movie.id} movie={movie} />;
-                        })}
-                    />
-                    <Route path="/see-more" element={<MovieDetail />} />
-                </Routes>
-            </div>
-        </Router>
+        // <Router>
+        <div className="container">
+            <Routes>
+                <Route
+                    path="/"
+                    element={movies.map((movie) => {
+                        return <ListMovie key={movie.id} movie={movie} />;
+                    })}
+                />
+                <Route path="/see-more" element={<MovieDetail />} />
+            </Routes>
+        </div>
+        // </Router>
         // </>
     );
 }
