@@ -1,17 +1,19 @@
 import totoro from '../images/Totoro.png';
+import bgwave from '../images/Bgwave.svg';
 import { Link } from 'react-router-dom';
 
 // List of movies
 function ListMovie({ movie }) {
     return (
-        <div className="listItem">
-            <div>
+        <div className="listContainer">
+            <div className="listPosterItem">
                 <img src={movie.image} alt="None" className="posterImg" />
-                <img src={totoro} alt="Nothing" className="bgImg" />
+                {/* <img src={bgwave} alt="None" className="posterImg" /> */}
             </div>
-            <div className="listText">
+            <div className="listTextItem ">
                 <h1>{movie.title}</h1>
                 <p className="description">{movie.description}</p>
+
                 <Link
                     to="/see-more"
                     state={{
@@ -24,6 +26,7 @@ function ListMovie({ movie }) {
                     <button className="btn">SEE MORE</button>
                 </Link>
             </div>
+            <img src={totoro} alt="Nothing" className="bgImg" />
         </div>
     );
 }
