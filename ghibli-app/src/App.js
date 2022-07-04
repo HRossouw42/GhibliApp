@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import ListMovie from './components/ListMovie';
+import ListMovieAlt from './components/ListMovieAlt';
 import MovieDetail from './components/MovieDetail';
 
 function App() {
@@ -44,8 +45,12 @@ function App() {
             <Routes>
                 <Route
                     path="/"
-                    element={movies.map((movie) => {
-                        return <ListMovie key={movie.id} movie={movie} />;
+                    element={movies.map((movie, index) => {
+                        if (index === 0 || index % 2 === 0) {
+                            return <ListMovie key={movie.id} movie={movie} />;
+                        } else {
+                        }
+                        return <ListMovieAlt key={movie.id} movie={movie} />;
                     })}
                 />
                 <Route path="/see-more" element={<MovieDetail />} />
