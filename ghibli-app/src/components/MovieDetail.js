@@ -11,8 +11,8 @@ function MovieDetail() {
         <div className="singleItem">
             <img src={banner} alt="banner" className="bannerImg"></img>
             <h1>{title}</h1>
-            <h2>{director}</h2>
-            <h2>{date}</h2>
+            <h2>Director: {director}</h2>
+            <h2>Release Date: {date}</h2>
             <Link to="/">
                 <button className="btn">BACK</button>
             </Link>
