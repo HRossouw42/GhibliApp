@@ -80,14 +80,16 @@ body {
 
     grid-area: text;
     z-index: 1;
+
     margin-left: clamp(10px, 2vw, 200px);
+    margin-right: clamp(10px, 2vw, 200px);
 }
 
 .singleItem {
     display: flex;
     flex-direction: column;
 
-    max-width: 700px;
+    max-width: 1000px;
     margin: auto;
     padding: 2em;
     text-align: center;
