@@ -23,7 +23,10 @@ body {
     border-radius: 5px;
 }
 
-.listContainer {
+/* Container for movie list */
+/* Alt versions are for every second movie item */
+.listContainer,
+.listContainerAlt {
     /* border: 1px solid rgb(255, 0, 0); */
 
     padding: 10px;
@@ -34,11 +37,15 @@ body {
             0.5fr
         );
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 'left poster text right' 'left poster text right';
+    grid-template-areas: 'blank poster text totoro' 'blank poster text totoro';
 
     column-gap: 10px;
 
     position: relative;
+}
+
+.listContainerAlt {
+    grid-template-areas: 'totoro text poster blank' 'totoro text poster blank';
 }
 
 .listPosterItem {
@@ -103,7 +110,7 @@ p {
     object-fit: contain;
 }
 
-.bgImg {
+.totoro {
     width: 100%;
     height: 90%;
 
@@ -121,9 +128,42 @@ p {
     /* background-color: aliceblue; */
 
     grid-row-start: text-start;
-    grid-row-end: right-end;
+    grid-row-end: totoro-end;
     grid-column-start: text-start;
-    grid-column-end: right-end;
+    grid-column-end: totoro-end;
+}
+
+.totoro,
+.totoroAlt {
+    width: 100%;
+    height: 90%;
+
+    object-fit: contain;
+
+    opacity: 0.1;
+
+    transform: rotateY(180deg);
+
+    z-index: -1;
+
+    justify-self: end;
+    align-self: end;
+
+    /* background-color: aliceblue; */
+
+    grid-row-start: text-start;
+    grid-row-end: totoro-end;
+    grid-column-start: text-start;
+    grid-column-end: totoro-end;
+}
+
+.totoroAlt {
+    transform: rotateY(0deg);
+
+    grid-row-start: totoro-start;
+    grid-row-end: text-end;
+    grid-column-start: totoro-start;
+    grid-column-end: text-end;
 }
 
 .bannerImg {

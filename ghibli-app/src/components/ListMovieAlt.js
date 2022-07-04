@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 // List of movies
 function ListMovieAlt({ movie }) {
     return (
-        <div className="listContainer">
+        <div className="listContainerAlt">
             <div className="listTextItem ">
                 <h1>{movie.title}</h1>
                 <p className="description">{movie.description}</p>
@@ -22,7 +22,7 @@ function ListMovieAlt({ movie }) {
                     <button className="btn">SEE MORE</button>
                 </Link>
             </div>
-            <img src={totoro} alt="Nothing" className="bgImg" />
+            <img src={totoro} alt="Nothing" className="totoroAlt" />
             <div className="listPosterItem">
                 <img src={movie.image} alt="None" className="posterImg" />
             </div>

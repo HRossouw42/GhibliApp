@@ -8,7 +8,6 @@ function ListMovie({ movie }) {
         <div className="listContainer">
             <div className="listPosterItem">
                 <img src={movie.image} alt="None" className="posterImg" />
-                {/* <img src={bgwave} alt="None" className="posterImg" /> */}
             </div>
             <div className="listTextItem ">
                 <h1>{movie.title}</h1>
@@ -26,7 +25,7 @@ function ListMovie({ movie }) {
                     <button className="btn">SEE MORE</button>
                 </Link>
             </div>
-            <img src={totoro} alt="Nothing" className="bgImg" />
+            <img src={totoro} alt="Nothing" className="totoro" />
         </div>
     );
 }
