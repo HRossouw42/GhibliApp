@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/GhibliApp/static/css/main.98df7e8f.css",
-    "main.js": "/GhibliApp/static/js/main.d7695c1e.js",
+    "main.css": "/GhibliApp/static/css/main.cd323f63.css",
+    "main.js": "/GhibliApp/static/js/main.ead95902.js",
     "static/js/787.11c2e41e.chunk.js": "/GhibliApp/static/js/787.11c2e41e.chunk.js",
+    "static/media/Bgwave.svg": "/GhibliApp/static/media/Bgwave.2bd6bd72b2943bad48b0.svg",
     "static/media/Totoro.png": "/GhibliApp/static/media/Totoro.13fe3b4fc2fc462ef6cd.png",
     "index.html": "/GhibliApp/index.html",
-    "main.98df7e8f.css.map": "/GhibliApp/static/css/main.98df7e8f.css.map",
-    "main.d7695c1e.js.map": "/GhibliApp/static/js/main.d7695c1e.js.map",
+    "main.cd323f63.css.map": "/GhibliApp/static/css/main.cd323f63.css.map",
+    "main.ead95902.js.map": "/GhibliApp/static/js/main.ead95902.js.map",
     "787.11c2e41e.chunk.js.map": "/GhibliApp/static/js/787.11c2e41e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98df7e8f.css",
-    "static/js/main.d7695c1e.js"
+    "static/css/main.cd323f63.css",
+    "static/js/main.ead95902.js"
   ]
 }
