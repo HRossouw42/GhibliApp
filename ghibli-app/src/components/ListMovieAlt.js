@@ -1,5 +1,4 @@
 import totoro from '../images/Totoro.png';
-import bgwave from '../images/Bgwave.svg';
 import { Link } from 'react-router-dom';
 
 // List of movies
