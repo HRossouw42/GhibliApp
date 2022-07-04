@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom';
 function ListMovieAlt({ movie }) {
     return (
         <div className="listContainerAlt">
+            <div className="listPosterItem">
+                <img src={movie.image} alt="None" className="posterImg" />
+            </div>
             <div className="listTextItem ">
                 <h1>{movie.title}</h1>
                 <p className="description">{movie.description}</p>
@@ -23,9 +26,6 @@ function ListMovieAlt({ movie }) {
                 </Link>
             </div>
             <img src={totoro} alt="Nothing" className="totoroAlt" />
-            <div className="listPosterItem">
-                <img src={movie.image} alt="None" className="posterImg" />
-            </div>
         </div>
     );
 }

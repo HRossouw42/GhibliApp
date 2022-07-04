@@ -19,7 +19,7 @@ body {
     max-width: 1500px;
     margin: 10px auto;
 
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 5px;
 }
 
@@ -32,7 +32,7 @@ body {
     padding: 10px;
 
     display: grid;
-    grid-template-columns: minmax(10px, 0.5fr) repeat(2, minmax(200px, 2fr)) minmax(
+    grid-template-columns: minmax(10px, 0.5fr) repeat(2, minmax(160px, 2fr)) minmax(
             10px,
             0.5fr
         );
@@ -40,6 +40,7 @@ body {
     grid-template-areas: 'blank poster text totoro' 'blank poster text totoro';
 
     column-gap: 10px;
+    margin-bottom: 5vw;
 
     position: relative;
 }
@@ -52,7 +53,8 @@ body {
     /* border: 1px solid skyblue; */
     /* background: steelblue; */
 
-    padding: 10px;
+    /* padding: 0px; */
+    padding-bottom: 1vw;
     align-self: center;
     min-width: 120px;
     width: fit-content;
@@ -62,6 +64,13 @@ body {
     background: url('../src/images/Bgwave.svg') repeat;
 
     grid-area: poster;
+}
+
+.posterImg {
+    width: 95%;
+    height: 95%;
+
+    object-fit: contain;
 }
 
 .listTextItem {
@@ -101,36 +110,6 @@ h2 {
 
 p {
     font-size: clamp(0.6rem, 2.5vw, 1rem);
-}
-
-.posterImg {
-    width: 95%;
-    height: 95%;
-
-    object-fit: contain;
-}
-
-.totoro {
-    width: 100%;
-    height: 90%;
-
-    object-fit: contain;
-
-    opacity: 0.1;
-
-    transform: rotateY(180deg);
-
-    z-index: -1;
-
-    justify-self: end;
-    align-self: end;
-
-    /* background-color: aliceblue; */
-
-    grid-row-start: text-start;
-    grid-row-end: totoro-end;
-    grid-column-start: text-start;
-    grid-column-end: totoro-end;
 }
 
 .totoro,
